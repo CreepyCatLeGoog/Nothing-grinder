@@ -109,7 +109,7 @@ def save_ascii_as_gif(ascii_frames, output_filename):
         output_filename,
         save_all=True,
         append_images=ascii_images[1:],
-        duration=5,
+        duration=10,
         loop=0
     )
 
@@ -119,5 +119,5 @@ frames = extract_gif_frames(im, fillEmpty=True)
 intensity_multiplier = 3
 ascii_frames = convert_frames_to_ascii(frames)
 
-animate_ascii(ascii_frames, num_iterations=3)
-save_ascii_as_gif(ascii_frames, "ascii_animation.gif")
+# save_ascii_as_gif(ascii_frames, "ascii_animation.gif")
+animate_ascii(ascii_frames, num_iterations=5)
